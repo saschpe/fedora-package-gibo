@@ -2,7 +2,6 @@ Name: gibo
 Version: 1.0.6
 Release: 1%{?dist}
 Summary: A shell script for easily accessing gitignore boilerplates
-Group: Development
 License: Unlicense
 URL: https://github.com/simonwhitaker/gibo
 Source0: https://github.com/simonwhitaker/gibo/archive/%{version}.tar.gz
@@ -31,8 +30,7 @@ Install this package if you want intelligent zsh tab-completion for gibo.
 %global debug_package %{nil}
 
 %prep
-%setup -q
-%patch0 -p1
+%autosetup -p1
 
 %build
 
@@ -55,3 +53,5 @@ install -p -m 644 gibo-completion.zsh %{buildroot}%{_datarootdir}/zsh/site-funct
 %{_datarootdir}/zsh/site-functions/_gibo
 
 %changelog
+* Sat May 05 2018 Sascha Peilicke <sascha@peilicke.de> - 1.0.6-1
+- Initial package

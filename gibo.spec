@@ -24,6 +24,7 @@ mkdir -p %{buildroot}/%{_bindir}
 install -p -m 755 %{name} %{buildroot}/%{_bindir}
 
 %files
+%doc README.md UNLICENSE
 %{_bindir}/%{name}
 
 %changelog

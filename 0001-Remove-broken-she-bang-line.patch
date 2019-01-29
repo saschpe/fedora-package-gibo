@@ -12,8 +12,8 @@ it's not needed for bash-completions.
 
 diff --git a/gibo-completion.bash b/gibo-completion.bash
 index 16e8eba..a2a595f 100644
---- a/gibo-completion.bash
-+++ b/gibo-completion.bash
+--- a/shell-completions/gibo-completion.bash
++++ b/shell-completions/gibo-completion.bash
 @@ -1,5 +1,3 @@
 -#!bash
 -#

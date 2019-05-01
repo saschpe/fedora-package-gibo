@@ -1,12 +1,10 @@
 Name: gibo
-Version: 2.1.0
+Version: 2.1.2
 Release: 1%{?dist}
 Summary: A shell script for easily accessing gitignore boilerplates
 License: Unlicense
 URL: https://github.com/simonwhitaker/gibo
 Source0: https://github.com/simonwhitaker/gibo/archive/%{version}.tar.gz
-# See https://github.com/simonwhitaker/gibo/pull/24
-Patch0: 0001-Remove-broken-she-bang-line.patch
 BuildArch: noarch
 
 %description
@@ -53,6 +51,8 @@ install -p -m 644 shell-completions/gibo-completion.zsh %{buildroot}%{_datarootd
 %{_datarootdir}/zsh/site-functions/_gibo
 
 %changelog
+* Wed May 01 2019 Sascha Peilicke <sascha@peilicke.de> - 2.1.2-1
+- Update to 2.1.2
 * Tue Jan 29 2019 Sascha Peilicke <sascha@peilicke.de> - 2.1.0-1
 - Update to 2.1.0
 * Sat May 05 2018 Sascha Peilicke <sascha@peilicke.de> - 1.0.6-1

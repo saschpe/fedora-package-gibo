@@ -1,5 +1,5 @@
 Name: gibo
-Version: 2.1.2
+Version: 2.2.3
 Release: 1%{?dist}
 Summary: A shell script for easily accessing gitignore boilerplates
 License: Unlicense
@@ -51,6 +51,8 @@ install -p -m 644 shell-completions/gibo-completion.zsh %{buildroot}%{_datarootd
 %{_datarootdir}/zsh/site-functions/_gibo
 
 %changelog
+* Thu Aug 15 2019 Sascha Peilicke <sascha@peilicke.de> - 2.2.3-1
+- Update to 2.2.3
 * Wed May 01 2019 Sascha Peilicke <sascha@peilicke.de> - 2.1.2-1
 - Update to 2.1.2
 * Tue Jan 29 2019 Sascha Peilicke <sascha@peilicke.de> - 2.1.0-1
